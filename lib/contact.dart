@@ -15,13 +15,13 @@ class _ContactState extends State<Contact> {
         home: Scaffold(
       //back
       appBar: AppBar(
-        title: const Text('Take to me Mars'),
+        automaticallyImplyLeading: true,
+        title: Text("Contact"),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            moveToLastScreen();
-          },
-        ),
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            }),
       ),
       body: Column(children: [
         const Text('Take me to mars'),

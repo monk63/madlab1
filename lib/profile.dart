@@ -25,7 +25,7 @@ class ProfileApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CircleAvatar(
-                        backgroundImage: AssetImage("assets/images/pic.jpg"),
+                        backgroundImage: AssetImage("images/pic1.jpg"),
                         radius: 50.0,
                       ),
                       SizedBox(
@@ -41,7 +41,10 @@ class ProfileApp extends StatelessWidget {
                       ElevatedButton(
                           child: const Text('More contacts'),
                           onPressed: () => {
-                                runApp(Contact()),
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Contact()))
                               }),
                       SizedBox(
                         height: 10.0,
