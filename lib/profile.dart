@@ -32,7 +32,7 @@ class ProfileApp extends StatelessWidget {
                         height: 10.0,
                       ),
                       Text(
-                        "Patience ",
+                        "Patience    ",
                         style: TextStyle(
                           fontSize: 22.0,
                           color: Colors.white,
