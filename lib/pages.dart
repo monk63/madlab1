@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'form.dart';
+
 class Pages extends StatefulWidget {
   const Pages({Key? key}) : super(key: key);
 
@@ -24,6 +26,12 @@ class _PagesState extends State<Pages> {
       body: Column(
         children: [
           const Text('Take me to Mars'),
+          ElevatedButton(
+              child: const Text('More contacts'),
+              onPressed: () => {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => FirstScreen()))
+                  }),
         ],
       ),
     );
